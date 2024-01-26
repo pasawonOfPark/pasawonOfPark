@@ -10,6 +10,7 @@
 pasawonOfPark/pasawonOfPark is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
+//-------ค่าตัวแปล ตัวหนังสือ ตัวเลขทศนิยม ตัวเลขจำนวนเต็ม ------
 
 let name: String = "pasawon"
 let dateOfBrith: String = "25/12/2547"
@@ -23,7 +24,7 @@ var salary: Int = 34500
 
 var statusOfMember: Bool = true 
 
-//----------Array------------
+//----------Array------------ เพิ่ม ลบ แทนที่ ตำแหน่งในอาเร-------
 
 var friend: [String] = ["Anne","kery","keith"]
 print(friend)
@@ -46,3 +47,44 @@ print(friend)
 
 friend.removeAll()
 print(friend)
+
+//--------------------- ฟังชั่นต่างๆทางคณิตศาต ต้องอิพอต import Foundation ทุกครั้งตอรใช้ -------------------------
+
+import Foundation
+
+let firstScore: Int = 52
+let secondScroe: Int = 24
+let thirdScore: Int = 35
+
+var totalScroe = firstScore + secondScroe + thirdScore
+print(totalScroe)
+
+var diffScore = firstScore - secondScroe
+print(diffScore)
+
+var powerScore = firstScore * 2
+print(powerScore)
+
+var myScore = Double(thirdScore) / 4
+print(myScore)
+
+var modScore = thirdScore % 4
+print(modScore)
+
+let myDouble: Double = -10.75
+print(round(myDouble))
+print(floor(myDouble))
+print(ceil(myDouble))
+print(abs(myDouble))
+`
+var myMesssage: String =  "Hello" + " ," + "my name is "
+var myName: String = "Park"
+myMesssage = myMesssage + myName
+print(myMesssage)
+
+
+let fristName = "pasawon"
+let city = "pathum thani"
+
+let welcomeMessage: String = "Hello \(fristName), wellcome to \(city)" 
+print(welcomeMessage)
