@@ -88,3 +88,17 @@ let city = "pathum thani"
 
 let welcomeMessage: String = "Hello \(fristName), wellcome to \(city)" 
 print(welcomeMessage)
+
+///------ สูตรคำนวณพื้นที่สามเหลี่ยม ------///
+import Foundation
+
+print("กำหนดความยาวฐานของสามเหลี่ยม:")
+var base = readLine()!
+
+print("กำหนดความสูงของสามเหลี่ยม")
+var height = readLine()!
+
+var area = 0.5 * Double(base)! * Double(height)!
+print("พื้นที่สามเหลี่ยม: \(area)")
+
+
