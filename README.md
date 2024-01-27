@@ -121,6 +121,20 @@ var totalPayment = Double(billTotal)! + tip_amount
 var split = Double(totalPayment) / Double(numOfPeople)!
 print("จำนวนเงินที่แต่ละคนต้องจ่าย: \(split) ")
 
+///------ ค่าทางตะกะ ------///
+import Foundation
+
+var a = 5
+var b = 3
+
+print("a == b" , a == b )
+print("a != b" , a != b )
+print("a < b " , a < b )
+print("a <= b" , a <= b )
+print("a >= b" , a >= b )
+
+ส
+
 
 
 
