@@ -101,4 +101,26 @@ var height = readLine()!
 var area = 0.5 * Double(base)! * Double(height)!
 print("พื้นที่สามเหลี่ยม: \(area)")
 
+///------ สูตรคำนวณ หารค่าอาหาร ------///
+import Foundation
+
+
+print("จำนวนค่าอาหาร: ")
+var billTotal = readLine()!
+
+print("จำนวนคนที่จ่าย: ")
+var numOfPeople = readLine()!
+
+print("ทิปให้พนักงาน(%): ")
+var tip = readLine()!
+
+var tip_amount = Double(billTotal)! * Double(tip)! / 100
+var totalPayment = Double(billTotal)! + tip_amount
+
+
+var split = Double(totalPayment) / Double(numOfPeople)!
+print("จำนวนเงินที่แต่ละคนต้องจ่าย: \(split) ")
+
+
+
 
