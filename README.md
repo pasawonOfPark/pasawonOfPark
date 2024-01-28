@@ -163,6 +163,20 @@ if finishPossition == 1{
   print("คุณไม่ได้รางวัล")
 }
 
+///------ switch case   ------///
+
+switch finishPossition{
+  case 1:
+  print("คุณได้เหรียนทอง")  
+   case 2: 
+  print("คุณได้เหรียนเงิน")
+  case 3:
+  print("คุณได้เหรียนทองแดง")
+  default:
+  print("คุณไม่ได้รางวัล")
+}
+
+
 
 
 
