@@ -15,7 +15,7 @@ var salary: Int = 34500
 var statusOfMember: Bool = true 
 
 
-//----------Array------------ เพิ่ม ลบ แทนที่ ตำแหน่งในอาเร-------
+//----------Array------------ เพิ่ม.append  ลบ.remove ลบทั้งหมด.removeAll แทนที่.insert ตำแหน่งในอาเร-------
 
 var friend: [String] = ["Anne","kery","keith"]
 print(friend)
@@ -125,15 +125,16 @@ print("a <= b" , a <= b )
 print("a >= b" , a >= b )
 
 ///------ if else ------///
+
 import Foundation
 
 let temperlature = 80
 
-//if temperlature >= 100{
-//  print("น้ำเดือด")
-//} else{
-//  print("น้ำไม่เดือด")
-//}
+if temperlature >= 100{
+  print("น้ำเดือด")
+} else{
+  print("น้ำไม่เดือด")
+}
 
 (temperlature >= 100) ? print("น้ำเดือด") : print("น้ำไม่เดือด")
 
