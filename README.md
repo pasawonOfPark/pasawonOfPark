@@ -147,6 +147,24 @@ let temperlature = 80
 (temperlature >= 100) ? print("น้ำเดือด") : print("น้ำไม่เดือด")
 
 
+///------ if - else if   ------///
+import Foundation
+
+
+var finishPossition = 2
+
+if finishPossition == 1{
+  print("คุณได้เหรียนทอง")
+}else if finishPossition == 2{
+  print("คุณได้เหรียนเงิน")
+}else if finishPossition == 3{
+  print("คุณได้เหรียนทองแดง")
+}else{
+  print("คุณไม่ได้รางวัล")
+}
+
+
+
 
 
 
