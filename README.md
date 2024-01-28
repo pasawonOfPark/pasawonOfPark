@@ -215,6 +215,19 @@ for name in name{
   print("Hello! \(name)")
 }
 
+///------ วนลูปแบบเช็คเงื่อนไข ------///
+
+var myLevel: Int = 0
+var finalLevel: Int = 5
+
+while(myLevel <= finalLevel){
+  print("you have play in level \(myLevel)")
+  // myLevel = myLevel + 1
+  myLevel += 1
+  
+}
+print("outside of while loop")
+
 
 
 
