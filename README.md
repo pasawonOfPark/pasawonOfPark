@@ -203,6 +203,19 @@ switch approximateCount{
 print("There are \(naturalCount) \(countedThings).")
 
 
+///------ วนลูปแบบนับจำนวนยอด ------///
+import Foundation
+
+for i in 1...5{
+print("this is \(i)")
+}  
+
+let name = ["kunk","looknam","Cathy"]
+for name in name{
+  print("Hello! \(name)")
+}
+
+
 
 
 
