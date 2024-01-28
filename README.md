@@ -141,6 +141,9 @@ if temperlature >= 100{
   print("น้ำไม่เดือด")
 }
 
+///------ if else แบบ case switch ex2 ------///
+
+import Foundation
 (temperlature >= 100) ? print("น้ำเดือด") : print("น้ำไม่เดือด")
 
 
