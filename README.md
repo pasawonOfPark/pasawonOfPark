@@ -133,7 +133,19 @@ print("a < b " , a < b )
 print("a <= b" , a <= b )
 print("a >= b" , a >= b )
 
-ส
+///------ if else ------///
+import Foundation
+
+let temperlature = 80
+
+//if temperlature >= 100{
+//  print("น้ำเดือด")
+//} else{
+//  print("น้ำไม่เดือด")
+//}
+
+(temperlature >= 100) ? print("น้ำเดือด") : print("น้ำไม่เดือด")
+
 
 
 
