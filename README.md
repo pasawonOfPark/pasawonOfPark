@@ -176,6 +176,29 @@ switch finishPossition{
 }
 
 
+///------ switch case  ex2 ------///
+import Foundation
+
+let approximateCount = 24
+let countedThings = "moons orbiting the planet"
+let naturalCount = String
+
+switch approximateCount{
+  case 0:
+    naturalCount = "no"
+  case 1...5:
+    naturalCount = "a few"
+  case 6...12:
+    naturalCount = "several"
+  case 13..<100:
+    naturalCount = "dozens of"
+  case 100..<1000:
+    naturalCount = "hundreds of"
+  default:
+    naturalCount = "many"
+}
+print("There are \(naturalCount) \(countedThings).")
+
 
 
 
