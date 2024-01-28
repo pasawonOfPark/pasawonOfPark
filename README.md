@@ -80,6 +80,7 @@ let city = "pathum thani"
 let welcomeMessage: String = "Hello \(fristName), wellcome to \(city)" 
 print(welcomeMessage)
 
+
 ///------ สูตรคำนวณพื้นที่สามเหลี่ยม ------///
 import Foundation
 
@@ -92,7 +93,9 @@ var height = readLine()!
 var area = 0.5 * Double(base)! * Double(height)!
 print("พื้นที่สามเหลี่ยม: \(area)")
 
+
 ///------ สูตรคำนวณ หารค่าอาหาร ------///
+
 import Foundation
 
 
@@ -112,6 +115,7 @@ var totalPayment = Double(billTotal)! + tip_amount
 var split = Double(totalPayment) / Double(numOfPeople)!
 print("จำนวนเงินที่แต่ละคนต้องจ่าย: \(split) ")
 
+
 ///------ ค่าทางตะกะ ------///
 import Foundation
 
@@ -123,6 +127,7 @@ print("a != b" , a != b )
 print("a < b " , a < b )
 print("a <= b" , a <= b )
 print("a >= b" , a >= b )
+
 
 ///------ if else ------///
 
@@ -137,6 +142,7 @@ if temperlature >= 100{
 }
 
 (temperlature >= 100) ? print("น้ำเดือด") : print("น้ำไม่เดือด")
+
 
 
 ///------ if - else if   ------///
@@ -154,6 +160,7 @@ if finishPossition == 1{
 }else{
   print("คุณไม่ได้รางวัล")
 }
+
 
 ///------ switch case   ------///
 
