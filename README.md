@@ -1,15 +1,5 @@
-- 👋 Hi, I’m @pasawonOfPark
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+การเขียนโปรแกรมภาษา Swift ด้วย Replit 
 
-<!---
-pasawonOfPark/pasawonOfPark is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
 //-------ค่าตัวแปล ตัวหนังสือ ตัวเลขทศนิยม ตัวเลขจำนวนเต็ม ------
 
 let name: String = "pasawon"
@@ -23,6 +13,7 @@ var occpation: String = "student"
 var salary: Int = 34500
 
 var statusOfMember: Bool = true 
+
 
 //----------Array------------ เพิ่ม ลบ แทนที่ ตำแหน่งในอาเร-------
 
