@@ -298,41 +298,42 @@ var payment = Double(readLine()!)!
 
 print("เงินทอน = \(payment - netPrice)") 
 
+
+
 //----การใช้คำสั่งฟังชั่น----//
 
-func displaypi(){
-  print("3.14")
-}
+func displaypi(){ 
+ print("3.14") }
 
-displaypi()
+displaypi() 
+
 //------------------------------------
 
-func triple(value: Int){
-  let result = value * 3
-  print("If you multiply \(value) by 3, you'll get \(result).")
+func triple(value: Int){ 
+  let result = value * 3 
+  print("If you multiply \(value) by 3, you'll get (result).") 
 }
 
 triple(value: 10)
 
 //------------------------------------
 
-func sayHello(to: String, and: String){
-  print("Hello \(to) and \(and)")
-}
+func sayHello(to: String, and: String){ print("Hello (to) and (and)") 
+} 
 sayHello(to:"pasawon", and:"bootsuwon")
 
 //------------------------------------
 
-func sayHelloAgine(to name: String, and anotherName: String){
-  print("Hello \(name) and \(anotherName)")
-}
+func sayHelloAgine(to name: String, and anotherName: String){ 
+print("Hello (name) and (anotherName)") 
+} 
 sayHelloAgine(to: "pasawon", and: "park")
 
 //------------------------------------
 
 func mutiply(a: Int, b: Int) -> Int{
-  let result = a * b
-  return result 
+let result = a * b 
+ return result 
 }
 
 let myResult = mutiply(a: 10, b: 10) 
