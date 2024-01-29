@@ -343,6 +343,45 @@ let myResult = mutiply(a: 10, b: 10)
 print(myResult)
 
 
+//------ คำนวนค่า BMI for if ------
+import Foundation
+
+var studentList:[String] = []
+
+print("โปรดระบุจำนวนผู้เรียนในห้อง :")
+let numberOfStudents = Int(readLine()!)!
+
+func bmi(weight: Double, hight: Double) -> Double{
+  let bmi = weight / (hight * hight)
+  return bmi
+}
+
+for i in 1...numberOfStudents {
+  print("ระบุชื่อนักเรียนคนที่ \(i) :")
+  let studentName = readLine()!
+  
+  print("ระบุน้ำหนัก(kg) \(i) :")
+  let studentWeigth = Double(readLine()!)!
+  
+  print("ส่วนสูง(cm) \(i) :")
+  let studentHight = Double(readLine()!)!
+
+  //แปลงค่าส่วนสูงจาก cm เป็น m 
+  let studenthightInMater = studentHight / 100
+
+  //คำนวนค่า BMI
+  let studentBmi = bmi(weight: studentWeigth, hight: studenthightInMater)
+
+  if studentBmi < 18.5{
+    studentList.append(studentName)
+  }
+
+}
+print("นักเรียนที่มีน้ำหนักต่ำกว่าเกณฑ์ : \(studentList)")
+for i in 1...studentList.count{
+  let name = studentList[i-1]
+  print(name)
+}
 
 
 
