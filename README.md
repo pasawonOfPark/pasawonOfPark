@@ -322,6 +322,6 @@ sayHello(to:"pasawon", and:"bootsuwon")
 func sayHelloAgine(to name: String, and anotherName: String){
   print("Hello \(name) and \(anotherName)")
 }
-sayHelloAgine(to: "park", and: "bootsuwon")
+sayHelloAgine(to: "pasawon", and: "park")
 
 
