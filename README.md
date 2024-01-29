@@ -299,13 +299,13 @@ var payment = Double(readLine()!)!
 print("เงินทอน = \(payment - netPrice)") 
 
 //----การใช้คำสั่งฟังชั่น----//
-import Foundation
 
 func displaypi(){
   print("3.14")
 }
 
 displaypi()
+//------------------------------------
 
 func triple(value: Int){
   let result = value * 3
@@ -314,14 +314,26 @@ func triple(value: Int){
 
 triple(value: 10)
 
+//------------------------------------
+
 func sayHello(to: String, and: String){
   print("Hello \(to) and \(and)")
 }
 sayHello(to:"pasawon", and:"bootsuwon")
 
+//------------------------------------
+
 func sayHelloAgine(to name: String, and anotherName: String){
   print("Hello \(name) and \(anotherName)")
 }
 sayHelloAgine(to: "pasawon", and: "park")
+
+//------------------------------------
+
+
+
+
+
+
 
 
