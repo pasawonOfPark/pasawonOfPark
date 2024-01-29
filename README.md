@@ -386,3 +386,45 @@ for i in 1...studentList.count{
 
 
 
+//----- คะแนนสอบ 3 ครั้ง ตัดเกรด -----//
+import Foundation
+
+print("คะแนนสอบ ครั้งที่ 1")
+let miniExam = Int(readLine()!)!
+
+print("คะแนนสอบ ครั้งที่ 2")
+let midtermExam = Int(readLine()!)!
+
+print("คะแนนครั้งที่ 3")
+let finalExam = Int(readLine()!)!
+
+func avgScore(firstScore: Int, secondScore: Int, thirdScore: Int) -> Double{
+  let result = (Double(firstScore) * 0.2) + (Double(secondScore) * 0.3) + (Double(thirdScore) * 0.5)
+  return result
+}
+
+let studentScore = avgScore( firstScore: miniExam, secondScore: midtermExam, thirdScore: finalExam)
+
+func getGrade(score: Double) -> String{
+  switch score {
+    case 90...100 :
+      return "A"
+    case 80..<90 :
+      return "B"
+    case 70..<80 :
+      return "C"
+    case 60..<70 :
+      return "D"
+    default:
+      return "F"
+
+  }
+}
+let gradeLetter = getGrade(score: studentScore)
+
+func displayGrade(score: Double, grade: String){
+  print("คะแนนรวมของคุณคือ \(score)")
+  print("gade ของคุณคือ \(grade)")  
+}
+displayGrade(score: studentScore, grade: gradeLetter)
+
