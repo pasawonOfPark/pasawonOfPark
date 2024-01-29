@@ -242,7 +242,7 @@ items = Int(readLine()!)!
 
 //หาราคารวมสินค้า
 for i in 1...items{
-  print("ราคาสินค้าชิ่นที่ \(i): บาท")  
+  print("ราคาสินค้าชิ่นที่ \(i):")  
   var productPrice = Double(readLine()!)!
   totalPrice = totalPrice + productPrice 
 }
