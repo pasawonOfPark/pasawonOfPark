@@ -330,6 +330,13 @@ sayHelloAgine(to: "pasawon", and: "park")
 
 //------------------------------------
 
+func mutiply(a: Int, b: Int) -> Int{
+  let result = a * b
+  return result 
+}
+
+let myResult = mutiply(a: 10, b: 10) 
+print(myResult)
 
 
 
