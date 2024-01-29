@@ -267,4 +267,36 @@ print("รับจำนวนเงิน: \(payment) บาท")
 print("เงินทอน: \(change) บาท")
 
 
+------------------------------------ เทส
+var items: Int = 0
+var total: Double = 0
+var discount: Double = 0
+var netPrice: Double = 0
+
+print("จำนวนสินค้า")
+items = Int(readLine()!)!
+
+for i in 1...items{
+  print("ราคาสินค้าต่อชิ้น")
+  var price = Double(readLine()!)!
+  total = total + price
+}
+  
+if total >= 1000{
+  discount = total * 0.1
+}else{
+  discount = 0
+}
+
+netPrice = total - discount
+print("ราคาสินค้า = \(total)")
+print("ส่วนลด = \(discount)")
+print("ราคราคาสุทธิ = \(netPrice)")
+
+print("เงินที่ลูกค้าชำระ" )
+var payment = Double(readLine()!)!
+
+print("เงินทอน = \(payment - netPrice)") 
+
+
 
