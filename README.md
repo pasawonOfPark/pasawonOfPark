@@ -229,6 +229,44 @@ while(myLevel <= finalLevel){
 print("outside of while loop")
 
 
+///------ วนลูปแบบเช็คเงื่อนไข ------///
+
+var items: Int = 0
+var totalPrice: Double = 0.0 
+var discount: Double = 0.0 
+
+var netPrice: Double = 0.0
+
+print("จำนวนสินค้า:")
+items = Int(readLine()!)!
+
+//หาราคารวมสินค้า
+for i in 1...items{
+  print("ราคาสินค้าชิ่นที่ \(i): บาท")  
+  var productPrice = Double(readLine()!)!
+  totalPrice = totalPrice + productPrice 
+}
+
+//คำนวนส่วนลด
+if totalPrice >= 1000 {
+  discount = totalPrice * 0.1
+} else {
+discount = 0.0
+}
+
+//คำนวนราคาสุทธิ
+netPrice = totalPrice - discount
+print("ยอดสินค้ารวม: \(totalPrice) บาท")
+print("ส่วนลด: \(discount) บาท")
+print("ยอดสุทธิ: \(netPrice) บาท")
+
+print("จำนวนที่เงินชำระสินค้า")
+var payment = Double(readLine()!)!
+
+var change = payment - netPrice
+print("รับจำนวนเงิน: \(payment) บาท")
+print("เงินทอน: \(change) บาท")
+
 
 
 
