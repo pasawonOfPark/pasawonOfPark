@@ -300,36 +300,39 @@ print("เงินทอน = \(payment - netPrice)")
 
 
 
-//----การใช้คำสั่งฟังชั่น----//
+//----การใช้คำสั่งฟังชั่น ทำงานโดยไม่มีการรับค่า อกี่เม้น ไม่รีเทรินค่า ----//
 
 func displaypi(){ 
  print("3.14") }
 
 displaypi() 
 
-//------------------------------------
+//---------การใช้คำสั่งฟังชั่น ทำงานโดยมีการรับค่า 1 ค่า ----//
 
 func triple(value: Int){ 
   let result = value * 3 
-  print("If you multiply \(value) by 3, you'll get (result).") 
+  print("รับค่าเข้า \(value) by 3, ได้ผลลัพธ์เป็น \(result).") 
 }
 
 triple(value: 10)
 
-//------------------------------------
+//--------การใช้คำสั่งฟังชั่น ทำงานโดยมีการรับค่ามากกว่า 1 ค่า
 
-func sayHello(to: String, and: String){ print("Hello (to) and (and)") 
+func sayHello(to: String, and: String){ 
+print("Hello \(to) and \(and)") 
 } 
+
 sayHello(to:"pasawon", and:"bootsuwon")
 
-//------------------------------------
+//-----------การใช้คำสั่งฟังชั่น รับค่าพารามิตเตอร์กับ อกี่เม้น ชื่อไม่เหมือนกัน
 
 func sayHelloAgine(to name: String, and anotherName: String){ 
-print("Hello (name) and (anotherName)") 
+print("Hello \(name) and \(anotherName)") 
 } 
+
 sayHelloAgine(to: "pasawon", and: "park")
 
-//------------------------------------
+//-------------การใช้คำสั่งฟังชั่น มีการคืนค่า และ มีการรับค่า
 
 func mutiply(a: Int, b: Int) -> Int{
 let result = a * b 
@@ -338,7 +341,6 @@ let result = a * b
 
 let myResult = mutiply(a: 10, b: 10) 
 print(myResult)
-
 
 
 
