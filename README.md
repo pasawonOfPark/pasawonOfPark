@@ -234,7 +234,6 @@ print("outside of while loop")
 var items: Int = 0
 var totalPrice: Double = 0.0 
 var discount: Double = 0.0 
-
 var netPrice: Double = 0.0
 
 print("จำนวนสินค้า:")
@@ -243,7 +242,7 @@ items = Int(readLine()!)!
 //หาราคารวมสินค้า
 for i in 1...items{
   print("ราคาสินค้าชิ่นที่ \(i):")  
-  var productPrice = Double(readLine()!)!
+  let productPrice = Double(readLine()!)!
   totalPrice = totalPrice + productPrice 
 }
 
@@ -266,8 +265,6 @@ var payment = Double(readLine()!)!
 var change = payment - netPrice
 print("รับจำนวนเงิน: \(payment) บาท")
 print("เงินทอน: \(change) บาท")
-
-
 
 
 
